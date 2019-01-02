@@ -1,0 +1,14 @@
+<h1> word counter</h1>
+<br>
+<a href=" {% url 'home' %} ">back to homepage</a>
+<h1>your text</h1>
+{{ fulltext }}
+<br>
+<h1>Counted Word</h1>
+Total words = {{words}}
+<br>
+<h1>word frequency</h1>
+{% for word,value in worddictionary %}
+{{ word }} = {{ value }}
+<br>
+{% endfor %}
